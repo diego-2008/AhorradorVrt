@@ -27,3 +27,23 @@ public class Main {
         adminDiego.agregarCliente((Cliente) usuarioDiego);
 
         System.out.println("Administrador " + adminDiego.getNombre() + " gestiona al cliente " + usuarioDiego.getNombre());
+
+    }
+}
+        // ----------------------------------------
+        //  JUAN CAMILO RODRÍGUEZ
+        // ----------------------------------------
+
+        Usuario usuarioCamilo = new Cliente("Juan Camilo Rodríguez", "juan.camilo@correo.com", 3000000);
+        MetaAhorro metaCamilo = new MetaAhorro("Viaje a Cartagena", 4000000, 10);
+        CalculadoraAhorro calculadoraCamilo = new CalculadoraAhorro(metaCamilo, (Cliente) usuarioCamilo);
+
+        System.out.println("Ahorro sugerido para Juan Camilo: $" + calculadoraCamilo.calcularAhorroSugerido());
+
+        // Polimorfismo con método sobrescrito (ejemplo)
+        usuarioCamilo.mostrarInformacion();
+
+
+
+
+
